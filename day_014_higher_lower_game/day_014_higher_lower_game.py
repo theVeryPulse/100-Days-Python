@@ -14,20 +14,20 @@ while True:
     print(art.logo)
     game_over = False
     score = 0
+    data_in_game = data
 
+    # Randomly select 2 subjects from the list, then remove these two from the list
+    subject1 = random.choice(data_in_game)
+    data_in_game[:] = [item for item in data_in_game if item.get('name') != subject1['name']]
+    subject2 = random.choice(data_in_game)
+    data_in_game[:] = [item for item in data_in_game if item.get('name') != subject2['name']]
+    
     while not game_over:
-
-        # Randomly select 2 subjects from the list, then remove these two from the list
-        subject1 = random.choice(data)
-        data[:] = [item for item in data if item.get('name') != subject1['name']]
-        subject2 = random.choice(data)
-        data[:] = [item for item in data if item.get('name') != subject2['name']]
-        
         # Print the subjects for player to compare
         print(F"\nCompare A: {subject1['name']}, a {subject1['description'].lower()} from {subject1['country']}.")
         print(art.vs)
         print(F"Against B: {subject2['name']}, a {subject2['description'].lower()} from {subject2['country']}.")
-        # print(F"A {subject1['follower_count']} vs B {subject2['follower_count']}")    # Debug
+        print(F"A {subject1['follower_count']} vs B {subject2['follower_count']}")    # Debug
 
         # Read in player's guess
         guess = input("Who has more followers? Type 'A' or 'B': ").lower()
@@ -54,6 +54,11 @@ while True:
         print("\033[H\033[J", end="")
         print(art.logo)
         print(F"You are right! Current score: {score}.")
+
+        # subject1 is now subject 2, subject2 is a new random subject
+        subject1 = subject2
+        subject2 = random.choice(data_in_game)
+        data_in_game[:] = [item for item in data_in_game if item.get('name') != subject2['name']]
 
     print(F"Your final score: {score}.")
     input("Press any key to restart...")

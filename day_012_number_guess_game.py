@@ -1,4 +1,7 @@
-logo ='''
+# This is a number guessing game. The player will have to guess a number between 1 and 100.
+import random
+
+logo = '''
   _   _                 _                  _____                     
  | \ | |               | |                / ____|                    
  |  \| |_   _ _ __ ___ | |__   ___ _ __  | |  __ _   _  ___  ___ ___ 
@@ -8,8 +11,8 @@ logo ='''
 
 print(logo)
 
-import random
 
+# check the guess against the correct number, return True if the game is over, guessed right or out of life
 def check(correct_num: int, guess_num: int, left_guess: int):
     """Check the guess. Return True if the game is over, either guess is right or out of life"""
     if guess_num != correct_num:
@@ -30,22 +33,20 @@ def check(correct_num: int, guess_num: int, left_guess: int):
     
 game_over = False
 while not game_over:
-    number = random.randint(1,100)
-    print(number)
+    number = random.randint(1, 100)
+    # print(number)    # Debug
 
     # Ask for game difficulty
-    diff = ""
+    diff = input("Guess a number between 1 and 100, including 1 and 100. Do you want to play easy mode or hard mode? ").lower()
     while diff != "easy" and diff != "hard":
-        diff = input("Guess a number between 1 and 100, including 1 and 100. Do you want to play easy mode or hard mode? ").lower()
-        if diff != "easy" and diff != "hard":
-            print("I do not understand, please input again.")
+        input("I do not understand, please input again.").lower()
     if diff == "easy":
         life = 10
     else:
         life = 5
     print(F"You have chosen {diff} mode. You can guess {life} times.")
 
-    
+    # Game loop
     while life > 0:
         # Ask for guess, check if the input is an integer between 0 and 100, including 0 and 100
         while True:
@@ -62,12 +63,13 @@ while not game_over:
                 else:
                     print("Please input a number between 0 and 100, including 0 and 100.")
 
-        # check the guess against the correct nummber.
+        # check the guess against the correct number.
         game_over = check(number, guess, life)
-        if game_over == True:
+        if game_over:
             break
         life -= 1
-        print(F"You stil have {life} guesses.")
-
+        print(F"You still have {life} guesses.")
+        
+    # Ask if the player wants to play again
     input("Press any key to restart")
     game_over = False

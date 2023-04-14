@@ -1,3 +1,5 @@
+# This is a quiz game that will ask you 10 questions and give you a score at the end.
+
 from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain

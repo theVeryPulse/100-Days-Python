@@ -1,3 +1,7 @@
+# This is a Coffee Machine stimulator.
+# It remembers the coffee recipe, check if ingredients are enough when customer orders,
+# and keep track of the profit and remaining resources.
+
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine

@@ -1,5 +1,5 @@
 # This is a snake game, players can control snake with keyboard,
-# Skills: OOP, class, Turtle,
+# Relevant skills: OOP, class, Turtle,
 
 from turtle import Turtle, Screen
 import time

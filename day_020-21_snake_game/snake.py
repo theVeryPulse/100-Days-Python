@@ -11,7 +11,7 @@ RIGHT = 0
 T_UNIT = 21
 
 # initial number of segments of the snake
-INIT_LEN = 10
+INIT_LEN = 3
 STEP_SPEED = 0.1
 
 

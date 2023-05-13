@@ -69,8 +69,7 @@ while snake.is_alive:
 
     # check if snake bites itself
     for i in range(1, len(snake.segments)):
-        if abs(snake.head.xcor() - snake.segments[i].xcor()) < 5 and \
-                abs(snake.head.ycor() - snake.segments[i].ycor()) < 5:
+        if snake.head.distance(snake.segments[i]) < 5:
             print(F'bite itself (segment {i})')
             snake.is_alive = False
             scoreboard.game_over()

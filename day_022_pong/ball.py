@@ -34,17 +34,7 @@ class Ball(Turtle):
         """Change the angle of the ball to reflection angle"""
         if abs(self.ycor()) > (height/2 - 20):
             angle_in = self.heading()
-            if 0 < angle_in <= 90:
-                angle_out = 360 - angle_in
-            elif 90 < angle_in < 180:
-                angle_out = 360 - angle_in
-            elif 180 < angle_in < 270:
-                angle_out = 360 - angle_in
-            elif 270 <= angle_in < 360:
-                angle_out = 360 - angle_in
-            else:
-                angle_out = angle_in
-                print('angle_out = angle_in, something went wrong')
+            angle_out = 360 - angle_in
             self.setheading(angle_out)
             self.bounced_this_frame = True
             print(F'wall bounce, angle in {angle_in}, angle out: {angle_out}')

@@ -9,7 +9,7 @@ GAME_SPEED = 0.01    # the smaller the value the quicker
 HEIGHT = 600
 WIDTH = 800
 # paddle size
-PADDLE_HIT_BOX_HALF_WIDTH = 5
+PADDLE_HIT_BOX_HALF_WIDTH = 15
 PADDLE_HIT_BOX_HALF_LENGTH = 50
 # paddle start position
 START_POSITION_R = (350, 0)

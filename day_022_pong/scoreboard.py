@@ -15,7 +15,7 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.color(SCORE_COLOR)
         self.goto(SCORE_POS)
-        self.write(F'{self.score_l} : {self.score_r}', move= False, align=SCORE_ALIGNMENT, font=SCORE_FONT)
+        self.write(F'{self.score_l} : {self.score_r}', move=False, align=SCORE_ALIGNMENT, font=SCORE_FONT)
 
     def gain_point_l(self):
         self.score_l += 1

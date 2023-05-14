@@ -26,7 +26,3 @@ class Player(Turtle):
         self.hideturtle()
         self.setpos(STARTING_POSITION)
         self.showturtle()
-
-
-
-

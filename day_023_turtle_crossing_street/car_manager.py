@@ -54,4 +54,3 @@ class CarManager:
 
     def test_car(self):
         self.make_a_new_car(+300, -280)
-

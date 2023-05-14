@@ -47,7 +47,7 @@ while True:
         ball.move()
         screen.update()
 
-        # chekc if ball hits wall
+        # check if ball hits wall
         if abs(ball.ycor()) > (HEIGHT/2 - 10):
             ball.wall_bounce(HEIGHT)
             keep_hit_wall += 1
@@ -79,6 +79,7 @@ while True:
             scoreboard.gain_point_r()
             break
 
+        # if ball keeps hitting the wall, reset the ball
         if keep_hit_wall > 10:
             break
 

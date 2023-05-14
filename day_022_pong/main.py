@@ -4,7 +4,7 @@ from ball import Ball
 from scoreboard import Scoreboard
 import time
 
-GAME_SPEED = 0.01    # the smaller the value the more quick
+GAME_SPEED = 0.01    # the smaller the value the quicker
 # default screen size
 HEIGHT = 600
 WIDTH = 800

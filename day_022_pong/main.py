@@ -1,3 +1,7 @@
+# This is the classic Pong game
+# The ball movement is based on the angle of direction
+# skills: class inheritance, class, Turtle
+
 from turtle import Screen
 from paddles import Paddle
 from ball import Ball

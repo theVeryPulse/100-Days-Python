@@ -1,6 +1,12 @@
 # This is the classic Pong game
-# The ball movement is based on the angle of direction
+# The ball is served within 45 degrees from vertical axis
+# use W/S or Up/Down to move paddles to catch the ball
+# player who cannot catch the ball loses a point, then game restarts
 # skills: class inheritance, class, Turtle
+
+# features:
+# ball movement is based on angle, mimicking real life physics
+# when ball keeps hitting the wall, it is served again
 
 from turtle import Screen
 from paddles import Paddle

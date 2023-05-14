@@ -6,7 +6,6 @@ FINISH_LINE_Y = 280
 FACING_NORTH = 90
 
 
-
 class Player(Turtle):
     def __init__(self):
         super().__init__()

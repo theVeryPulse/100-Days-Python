@@ -19,6 +19,7 @@ TURTLE_HIT_BOX_RAD = 10
 
 
 def collision():
+    """Detect collision between turtle and each car"""
     print(car_manager.cars)
     for car in car_manager.cars:
         print(F'car number: {car_manager.cars.index(car)}')
@@ -53,12 +54,13 @@ for i in range(2000):
     car_manager.cars_move()
     car_manager.remove_outside_cars(WINDOW_WIDTH)
 
+# main loop
 game_is_on = True
 while game_is_on:
     time.sleep(GAME_SPEED)
     car_manager.spawn_cars(WINDOW_WIDTH)
     car_manager.cars_move()
-    # car_manager.car_number_check()
+    # car_manager.car_number_check()    # monitor code
     car_manager.remove_outside_cars(WINDOW_WIDTH)
     screen.update()
     if player.reach_finish_line():
@@ -66,7 +68,6 @@ while game_is_on:
         scoreboard.next_level()
         player.reset_turtle()
         time.sleep(1)
-
     if collision():
         game_is_on = False
 

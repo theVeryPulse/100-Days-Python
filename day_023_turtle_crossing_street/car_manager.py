@@ -18,6 +18,7 @@ class CarManager:
         self.interval = INTERVAL
 
     def make_a_new_car(self, xcor, ycor):
+        """Spawn a car at input coordinates, facing west (left)"""
         new_car = Turtle()
         new_car.penup()
         new_car.shape('square')

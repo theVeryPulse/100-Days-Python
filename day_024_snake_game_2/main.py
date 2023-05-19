@@ -1,6 +1,6 @@
 # This is the updated version of the previous snake game,
 # it can now record the high score of all games
-# skills: read/write file, class inheritance, class, Turtle,
+# SKILLS: read/write file, class inheritance, class, Turtle,
 
 from turtle import Screen
 from snake import Snake

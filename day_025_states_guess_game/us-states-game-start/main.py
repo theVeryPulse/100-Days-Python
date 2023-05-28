@@ -2,7 +2,7 @@
 # player inputs a state name, if guessed right, the name will be displayed on the map, if wrong, player can keep trying
 # scores are tracked based on the number of guessed states
 # input 'exit' to exit the game and see all the fifty states of the U.S.
-# SKILLS: pandas, turtle
+# SKILLS: pandas, turtle, list comprehension
 
 import turtle
 import pandas as pd
@@ -59,10 +59,9 @@ while not len(guessed_states) > 50:
         guessed_states.append(answer_state)
 
 # record all states that are not guessed
-unguessed_states = []
-for state in all_states:
-    if state not in guessed_states:
-        unguessed_states.append(state)
+unguessed_states = [state for state in all_states if state not in guessed_states]
+print(unguessed_states)
+
 # display every state
 for state_str in unguessed_states:
     unguessed_state_info_df = states_df[states_df.state == state_str]

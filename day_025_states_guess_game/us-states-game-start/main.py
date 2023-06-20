@@ -1,6 +1,6 @@
 # This is a state guess game
 # player inputs a state name, if guessed right, the name will be displayed on the map, if wrong, player can keep trying
-# scores are tracked based on the number of guessed states
+#   scores are tracked based on the number of guessed states
 # input 'exit' to exit the game and see all the fifty states of the U.S.
 # SKILLS: pandas, turtle, list comprehension
 

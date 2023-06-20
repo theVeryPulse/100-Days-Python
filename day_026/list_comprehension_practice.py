@@ -7,3 +7,4 @@ print(c_list)
 
 d_list = ['Alex', 'Beth', 'Caroline']
 e_list = [name.upper() for name in d_list]
+

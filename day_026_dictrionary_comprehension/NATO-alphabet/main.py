@@ -1,5 +1,6 @@
 # This program takes words and converts them into their corresponding nato codes
 # SKILLS: dictionary comprehension, pandas
+# Difficulty: easy
 
 import pandas as pd
 # pandas method: iterrows(), returns (row_index, row_content)

@@ -24,11 +24,11 @@ timer = None
 def reset_timer():
     global check_marks, timer, reps
     check_marks = ''
+    check_mark_dp.config(text='')
     reps = 0
     title_dp.config(text='Timer')
     window.after_cancel(timer)
     canvas.itemconfig(count_down_dp, text='00:00')
-    pass
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 

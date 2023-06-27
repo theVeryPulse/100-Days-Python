@@ -7,3 +7,8 @@ So far I have learned:
 - pandas (day 25, 26)
 - read/write file (day 24)
 - class, class inheritance (day 20, 21, 23)
+
+## Capstone projects:
+
+- [Turtle Crossing Game](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_023_turtle_crossing_street)
+- [Black Jack Game](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_011_black_jack)

@@ -17,7 +17,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 SECONDS_IN_MIN = 1
-timer = None
+timer = None  # the on-going timer (tk.after())
 
 
 # ---------------------------- TIMER RESET ------------------------------- # 
@@ -65,7 +65,6 @@ def count_down(count):
     canvas.itemconfig(count_down_dp, text=f'{minutes_dp}:{seconds_dp}')
     if count >= 0:
         timer = window.after(1000, count_down, count - 1)
-        print(f'count: {count}')
     else:  # count down to zero
         start_timer()
         if reps % 2 == 0:

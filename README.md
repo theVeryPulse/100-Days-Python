@@ -1,5 +1,5 @@
 # Python Practice Codes
-These are my Python practice projects from the App Brewery online course. Each day's project is approximately over 2 hours' worth of effort.
+These are my Python practice projects. On average, each day's project is approximately over 2 hours' worth of effort.
 
 So far I have learned:
 - .json files handling (day 30)

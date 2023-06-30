@@ -4,11 +4,8 @@
 import smtplib
 import datetime as dt
 import random
-# ####### PRIVATE INFO #######################
-gmail_address = 'philip'
-gmail_password = 'fffeb'
-yahoo_address = 'philip'
-# ####### PRIVATE INFO #######################
+from email_account_info_private import gmail_address, gmail_password, yahoo_address
+
 now = (dt.datetime.now())
 print(now.year, type(now.year))
 print(type(now))

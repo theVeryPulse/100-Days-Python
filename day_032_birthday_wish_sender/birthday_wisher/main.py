@@ -14,6 +14,7 @@ import datetime as dt
 import os
 import random
 import smtplib
+from email_account_info_private import gmail_address, gmail_password
 
 
 # load birthday data
@@ -42,12 +43,6 @@ with open(f'./letter_templates/{letter_filename}', 'r') as file:
 # ---replace name---
 content = content.replace('[NAME]', f'{birthday_star["name"]}')
 # ===send email===
-# ---mail info---
-# ####### PRIVATE INFO #######################
-gmail_address = 'philip'
-gmail_password = 'fffeb'
-# ####### PRIVATE INFO #######################
-# ---sending---
 with smtplib.SMTP('smtp.gmail.com', 587) as connection:
     connection.ehlo()
     connection.starttls()

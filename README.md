@@ -2,13 +2,13 @@
 These are my Python practice projects. On average, each day's project is approximately over 2 hours' worth of effort.
 
 So far I have learned:
-- API (day 33)
+- API (day 33, 34)
 - smtplib (day 32)
 - datetime module (day 32)
 - .json files handling (day 30)
-- Tkinter, GUI (day 27, 28, 29, 30, 31)
+- Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)
-- class, class inheritance (day 20, 21, 23)
+- class, class inheritance (day 20, 21, 23, 34)
 
 ## Capstone projects:
 

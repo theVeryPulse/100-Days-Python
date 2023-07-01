@@ -10,7 +10,7 @@ Difficulty: easy;
 import requests
 import os
 from twilio.rest import Client
-from log_in_information_private import account_sid, auth_token, appid
+from log_in_information_private import twilio_account_sid, twilio_auth_token, appid
 
 # ===get weather forecast===
 forecast_endpoint = 'http://api.openweathermap.org/data/2.5/forecast'
@@ -36,7 +36,7 @@ for i in range(5):
         should_bring_umbrella = True
 
 # See http://twil.io/secure
-client = Client(account_sid, auth_token)
+client = Client(twilio_account_sid, twilio_auth_token)
 
 # ===send information to phone, if will rain===
 if should_bring_umbrella:

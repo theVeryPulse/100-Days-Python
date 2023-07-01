@@ -2,7 +2,8 @@
 These are my Python practice projects. On average, each day's project is approximately over 2 hours' worth of effort.
 
 So far I have learned:
-- API (day 33, 34)
+- Environment variables (day 35)
+- API (day 33, 34, 35)
 - smtplib (day 32)
 - datetime module (day 32)
 - .json files handling (day 30)

@@ -10,7 +10,7 @@ Difficulty: easy;
 import requests
 import os
 from twilio.rest import Client
-from log_in_information_private import account_sid, auth_token
+from log_in_information_private import account_sid, auth_token, appid
 
 # ===get weather forecast===
 forecast_endpoint = 'http://api.openweathermap.org/data/2.5/forecast'
@@ -19,7 +19,7 @@ parameters = {
     'lat': 51.5072,
     'lon': 0.1276,
     'exclude': 'current,minutely,daily',
-    'appid': '56f64d871cd69ea9bce860e3d35f0a57',
+    'appid': appid,
 }
 
 response = requests.get(url=forecast_endpoint, params=parameters)

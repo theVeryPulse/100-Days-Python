@@ -19,7 +19,7 @@ parameters = {
     'lat': 51.5072,
     'lon': 0.1276,
     'exclude': 'current,minutely,daily',
-    'appid': '56f64d871cd69ea9bce860e3d35f0a57',
+    'appid': '',
 }
 
 response = requests.get(url=forecast_endpoint, params=parameters)

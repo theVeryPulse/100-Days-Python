@@ -3,7 +3,7 @@ These are my Python practice projects. On average, each day's project is approxi
 
 So far I have learned:
 - Environment variables (day 35)
-- API (day 33, 34, 35)
+- API (day 33, 34, 35, 36)
 - .json files handling (day 30)
 - Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)

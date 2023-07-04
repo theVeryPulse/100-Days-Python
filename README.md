@@ -2,12 +2,12 @@
 These are my Python practice projects. On average, each project is hours' worth of effort.
 
 So far I have learned:
-- Environment variables (day 35)
-- API (day 33, 34, 35, 36, 37)
+- Environment variables (day 35, 38)
+- API (day 33, 34, 35, 36, 37, 38)
 - Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)
 - class, class inheritance (day 20, 21, 23, 34)
-- modules: requests, smtplib, datetime
+- modules: requests, smtplib, json, datetime
 
 ## Capstone projects:
 

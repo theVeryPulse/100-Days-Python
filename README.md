@@ -1,14 +1,13 @@
 # Python Practice Codes
-These are my Python practice projects. On average, each day's project is approximately over 2 hours' worth of effort.
+These are my Python practice projects. On average, each project is hours' worth of effort.
 
 So far I have learned:
 - Environment variables (day 35)
-- API (day 33, 34, 35, 36)
-- .json files handling (day 30)
+- API (day 33, 34, 35, 36, 37)
 - Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)
 - class, class inheritance (day 20, 21, 23, 34)
-- modules: smtplib, datetime
+- modules: requests, smtplib, datetime
 
 ## Capstone projects:
 

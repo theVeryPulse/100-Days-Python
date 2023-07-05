@@ -11,7 +11,7 @@ So far I have learned and practiced:
 
 ## Capstone projects:
 
-- [🌔 Cheap Flights]()
+- [🌔 Cheap Flights](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_039-040)
 - [🌓 Flash Card App](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_031_flash_card_app)
 - [🌒 Turtle Crossing Game](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_023_turtle_crossing_street)
 - [🌑 Black Jack Game ](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_011_black_jack)

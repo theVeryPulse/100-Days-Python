@@ -27,8 +27,8 @@ class FlightSearch:
         print(f'{city_name} city code: {city_code}')
         return city_code
 
-    def find_cheap_flights_to(self,  arrival: str, departure='LON',) -> dict:
-        """Return the data as a dict.
+    def find_cheap_flights_to(self,  arrival: str, departure='LON', stop_overs=0, via_city='') -> dict:
+        """Return the flight information to target city as a dict.
         Example
         {
             "id": "204525c34ce300003385de2c_0|0a7c22f54cf0000003a719fe_0",
@@ -160,7 +160,13 @@ class FlightSearch:
         }
         response = requests.get(url=f'{self.tequila_endpoint}/v2/search', headers=self.tequila_header, params=query)
         # print(json.dumps(response.json(), indent=4))
-        return response.json()['data'][0]
+        try:
+            print('flight_search...')
+            result = response.json()['data'][0]
+        except Exception as E:
+            print(f'Error: {E}')
+        else:
+            return result
 
 
 # test code

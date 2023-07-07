@@ -6,7 +6,9 @@ def generate_notification_from(city_flight: dict, sheet_data_dict) -> list:
     texts_list = []
     for dst_city in city_flight:
         print(f'==Comparing current price with expectation: {dst_city}==')
-        if city_flight[dst_city]['price'] <= sheet_data_dict[dst_city]["lowestPrice"]:
+        if sheet_data_dict[dst_city].get("lowestPrice") is None:
+            continue
+        if city_flight[dst_city]['price'] <= sheet_data_dict[dst_city].get("lowestPrice"):
         # if True:  # test mode, use this line to skip comparison
             text = f'Subject:==CHEAP FLIGHT TO {dst_city.upper()}==\n\n' \
                    f'Only £{city_flight[dst_city]["price"]} to fly from ' \
@@ -20,6 +22,7 @@ def generate_notification_from(city_flight: dict, sheet_data_dict) -> list:
                 for flight in city_flight[dst_city]['route']:
                     layovers.append(flight['cityTo'])
                 text += f'\nThe complete journey: {"->".join(layovers)}'
+            text += f'\n\nGet your ticket now at: {city_flight[dst_city]["deep_link"]}'
             texts_list.append(text)
     for text in texts_list:
         print(text)

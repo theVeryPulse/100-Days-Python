@@ -2,8 +2,7 @@
 These are my Python practice projects. On average, each project is hours' worth of effort.
 
 So far I have learned and practiced:
-- HTML (day 41)
-- Environment variables (day 35, 38)
+- HTML (day 41, 42)
 - API (day 33, 34, 35, 36, 37, 38, 39, 40)
 - Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)

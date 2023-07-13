@@ -1,10 +1,10 @@
 # Python Practice Codes
 These are my Python practice projects. On average, each project is hours' worth of effort.
 
-So far I have learned and practiced:
-- Web scraping (day 45)
+So far I have learned and built projects of:
+- Web scraping (day 45, 47)
 - HTML, CSS (day 41, 42, 43, 44)
-- API (day 33, 34, 35, 36, 37, 38, 39, 40)
+- API (day 33, 34, 35, 36, 37, 38, 39, 40, 47)
 - Tkinter, GUI (day 27, 28, 29, 30, 31, 34)
 - pandas (day 25, 26, 31, 32)
 - class, class inheritance (day 20, 21, 23, 34, 39, 40)

@@ -7,19 +7,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
-driver.get('https://orteil.dashnet.org/cookieclicker/')
-
-time.sleep(15)
-
-
-
-FIVE_SECS = 5  # [seconds]
-TIME_TO_STOP = 20
-start = time.time()
-timeout_start = time.time()
-
-
 
 def to_number(src_num):
     """Transform a formatted number to int. E.g., 123,789: str to 123789: int"""
@@ -28,6 +15,15 @@ def to_number(src_num):
     else:
         return int(src_num)
 
+
+driver = webdriver.Chrome()
+driver.get('https://orteil.dashnet.org/cookieclicker/')
+time.sleep(15)  # manually select language, cookie consent
+
+FIVE_SECS = 5  # [seconds]
+TIME_TO_STOP = 20
+start = time.time()
+timeout_start = time.time()
 
 big_cookie = driver.find_element(By.ID, 'bigCookie')
 print('Automation begins')

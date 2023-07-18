@@ -67,9 +67,9 @@ while True:
     try:
         print('Trying filling in login information: ', end='')
         username = driver.find_element(By.ID, 'email')
-        username.send_keys(os.environ.get('username'))
+        username.send_keys(os.environ.get('username'))  # environment variable
         password = driver.find_element(By.ID, 'pass')
-        password.send_keys(os.environ.get('password'))
+        password.send_keys(os.environ.get('password'))  # environment variable
         login = driver.find_element(By.NAME, 'login')
         login.click()
     except:

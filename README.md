@@ -2,6 +2,7 @@
 These are my Python practice projects. Each project is over 2 hours' worth of effort.
 
 So far I have learned and built projects of:
+- Front-end development with Flask (day 54)
 - Web scraping & interaction (day 45, 46, 47, 48, 49, 50, 51, 52, 53)
 - HTML, CSS (day 41, 42, 43, 44)
 - API (day 33, 34, 35, 36, 37, 38, 39, 40, 46, 47)

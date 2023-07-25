@@ -15,7 +15,7 @@ So far I have learned and built projects of:
 
 ## Capstone projects:
 
-- [Blog Website - web with Flask](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_059_blog_capstone_part2)
+- [🔖 Blog Website - web with Flask](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_059_blog_capstone_part2)
 - [📋 Data Entry Job Automation - web scraping](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_053_data_entry_automation_web_scraping_capstone)
 - [✈️ Cheap Flights and Notice - API](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_039-040_cheap_flights_source_and_notif)
 - [📖 Flash Card App - GUI](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_031_flash_card_app)

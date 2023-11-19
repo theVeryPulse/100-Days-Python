@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+</head>
+<body>
+<h1>It works!</h1>
+<form action="{{ url_for(login) }}" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required placeholder="name"
+           minlength="4" maxlength="8" size="10">
+    <label for="password">Password</label>
+    <input type="text" id="password" name="password" required placeholder="password"
+           minlength="4" maxlength="8" size="10">
+    <button type="submit" name="submit" id="">Submit</button>
+</form>
+</body>
+</html>

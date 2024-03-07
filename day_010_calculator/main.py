@@ -1,49 +1,62 @@
-logo = """
- _____________________
-|  _________________  |
-| | Pythonista   0. | |  .----------------.  .----------------.  .----------------.  .----------------. 
-| |_________________| | | .--------------. || .--------------. || .--------------. || .--------------. |
-|  ___ ___ ___   ___  | | |     ______   | || |      __      | || |   _____      | || |     ______   | |
-| | 7 | 8 | 9 | | + | | | |   .' ___  |  | || |     /  \     | || |  |_   _|     | || |   .' ___  |  | |
-| |___|___|___| |___| | | |  / .'   \_|  | || |    / /\ \    | || |    | |       | || |  / .'   \_|  | |
-| | 4 | 5 | 6 | | - | | | |  | |         | || |   / ____ \   | || |    | |   _   | || |  | |         | |
-| |___|___|___| |___| | | |  \ `.___.'\  | || | _/ /    \ \_ | || |   _| |__/ |  | || |  \ `.___.'\  | |
-| | 1 | 2 | 3 | | x | | | |   `._____.'  | || ||____|  |____|| || |  |________|  | || |   `._____.'  | |
-| |___|___|___| |___| | | |              | || |              | || |              | || |              | |
-| | . | 0 | = | | / | | | '--------------' || '--------------' || '--------------' || '--------------' |
-| |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
-|_____________________|
-"""
+def add(a: float, b: float):
+    """Returns (a + b)"""
+    return a + b
 
-print(logo)
 
-def add(num1, num2):
-    """Return the sum of two numbers"""
-    return num1 + num2
-def substract(num1, num2):
-    """Return the difference of num1 minues num2"""
-    return num1 - num2
-def multiply(num1, num2):
-    """Return the product of two numbers multiplying"""
-    return num1 * num2
-def divide(num1, num2):
-    """Return the quotient of num1 divided by num2"""
-    return num1 / num2
+def subtract(a: float, b: float):
+    """Returns (a - b)"""
+    return a - b
 
-calc_dict = {
-    "+": add,
-    "-": substract,
-    "*": multiply,
-    "/": divide
-}
 
-while True:
-    calc_type = input("Which type of calculation do you want to do? Input + for addition, - for substraction, * for multiply, and / for division\n").upper()
-    if calc_type not in calc_dict:
-        print("Wrong input.")
-        continue
-    num1 = float(input("Please input first number: "))
-    num2 = float(input("Please input second number: "))
-    outcome = calc_dict[calc_type](num1, num2)
-    print(f"{num1}{calc_type}{num2}={outcome}")
-    input("Press any key to continue")
+def multiply(a: float, b: float):
+    """Returns (a * b)"""
+    return a * b
+
+
+def divide(a: float, b: float):
+    """Return (a / b)"""
+    return a / b
+
+
+if __name__ == '__main__':
+
+    logo = """
+     _____________________
+    |  _________________  |
+    | | Pythonista   0. | |  .----------------.  .----------------.  .----------------.  .----------------. 
+    | |_________________| | | .--------------. || .--------------. || .--------------. || .--------------. |
+    |  ___ ___ ___   ___  | | |     ______   | || |      __      | || |   _____      | || |     ______   | |
+    | | 7 | 8 | 9 | | + | | | |   .' ___  |  | || |     /  \     | || |  |_   _|     | || |   .' ___  |  | |
+    | |___|___|___| |___| | | |  / .'   \_|  | || |    / /\ \    | || |    | |       | || |  / .'   \_|  | |
+    | | 4 | 5 | 6 | | - | | | |  | |         | || |   / ____ \   | || |    | |   _   | || |  | |         | |
+    | |___|___|___| |___| | | |  \ `.___.'\  | || | _/ /    \ \_ | || |   _| |__/ |  | || |  \ `.___.'\  | |
+    | | 1 | 2 | 3 | | x | | | |   `._____.'  | || ||____|  |____|| || |  |________|  | || |   `._____.'  | |
+    | |___|___|___| |___| | | |              | || |              | || |              | || |              | |
+    | | . | 0 | = | | / | | | '--------------' || '--------------' || '--------------' || '--------------' |
+    | |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
+    |_____________________|
+    """
+
+    calc_dict = {
+        "+": add,
+        "-": subtract,
+        "*": multiply,
+        "/": divide
+    }
+    print(logo)
+
+    while True:
+        calc_type = input("Which type of calculation do you want to do? Input "
+                          "+ for addition, - for subtraction, * for multiply, "
+                          "and / for division\n").upper()
+        if calc_type not in calc_dict:
+            print("Wrong input.")
+            continue
+        num1 = float(input("Please input first number: "))
+        num2 = float(input("Please input second number: "))
+        if calc_type == '/' and num2 == 0:
+            print("0 divide error.")
+            continue
+        outcome = calc_dict[calc_type](num1, num2)
+        print(f"{num1}{calc_type}{num2}={outcome}")
+        input("Press Enter to continue")

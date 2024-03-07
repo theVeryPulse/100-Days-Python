@@ -36,15 +36,9 @@ if __name__ == '__main__':
     | |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
     |_____________________|
     """
-
-    calc_dict = {
-        "+": add,
-        "-": subtract,
-        "*": multiply,
-        "/": divide
-    }
     print(logo)
 
+    calc_dict = {"+": add, "-": subtract, "*": multiply, "/": divide}
     while True:
         calc_type = input("Which type of calculation do you want to do? Input "
                           "+ for addition, - for subtraction, * for multiply, "

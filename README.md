@@ -1,5 +1,5 @@
 # Python Practice Codes
-These are my Python practice projects. Each project is over 2 hours' worth of effort.
+Python practice projects following [100 Days of Python | Udemy](https://www.udemy.com/course/100-days-of-code/).
 
 So far I have learned and built projects of:
 - Bootstrap (day 58, 60, 61)
@@ -12,9 +12,11 @@ So far I have learned and built projects of:
 
 ## Capstone projects:
 
-- [🔖 Blog Website - web with Flask](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_059_blog_capstone_part2)
-- [📋 Data Entry Job Automation - web scraping](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_053_data_entry_automation_web_scraping_capstone)
-- [✈️ Cheap Flights and Notice - API](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_039-040_cheap_flights_source_and_notif)
-- [📖 Flash Card App - GUI](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_031_flash_card_app)
-- [🕹️ Turtle Crossing Game](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_023_turtle_crossing_street)
-- [🕹️ Black Jack Game ](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_011_black_jack)
+| Topic | Project |
+| -------- | ------- |
+| Web development with Flask | [Blog Website](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_059_blog_capstone_part2) |
+| Web scraping | [Data Entry Job Automation](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_053_data_entry_automation_web_scraping_capstone) |
+| API | [Cheap Flights and Notice](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_039-040_cheap_flights_source_and_notif) |
+| GUI app | [Flash Card App](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_031_flash_card_app) |
+| GUI game | [Turtle Crossing Game](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_023_turtle_crossing_street) |
+|TUI game | [Black Jack Game ](https://github.com/TheVeryPulse/python_practice_codes/tree/main/day_011_black_jack) |

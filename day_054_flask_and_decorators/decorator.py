@@ -1,8 +1,5 @@
 import time
 
-current_time = time.time()
-print(current_time)
-
 
 def speed_calc_decorator(function):
     def wrapper_function():
@@ -25,5 +22,8 @@ def slow_function():
         i * i
 
 
-fast_function()
-slow_function()
+if __name__ == '__main__':
+    current_time = time.time()
+    print(current_time)
+    fast_function()
+    slow_function()
